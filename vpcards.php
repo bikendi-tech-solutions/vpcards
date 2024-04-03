@@ -65,6 +65,19 @@ function vp_addoption(){
 
 }
 
+require __DIR__.'/plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/bikendi-tech-solutions/vpcards',
+	__FILE__,
+	'vpcards'
+);
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+
 
 add_action("vtupress_history_condition","addcardsservices");
 function addcardsservices(){
