@@ -3,7 +3,7 @@
 *Plugin Name: VP Cards
 *Plugin URI: http://vtupress.com
 *Description: Add E-Recharge/Cards feature to your vtu business . An extension for vtupress plugin
-*Version: 1.4.4
+*Version: 1.4.5
 *Author: Akor Victor
 *Author URI: https://facebook.com/akor.victor.39
 */
